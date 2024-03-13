@@ -1,0 +1,15 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 9999
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jpademo?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8
+    username: root
+    password: yang020128
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update #如果表中有数据就不会重新创建
